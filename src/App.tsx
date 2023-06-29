@@ -5,19 +5,21 @@ const App = () => {
 	const tabName = useAppSelector((state) => state.tab.tab);
 
 	return (
-		<div className="max-w-full m-8">
-			<Heading />
-			<div className="max-w-[608px] w-full flex flex-col mx-auto">
-				<Tabs />
-				{tabName === 'All' ? (
-					<All />
-				) : tabName === 'Active' ? (
-					<Active />
-				) : (
-					<Completed />
-				)}
+		<>
+			<div className="max-w-full m-8">
+				<Heading />
+				<div className="max-w-[608px] w-full flex flex-col mx-auto">
+					<Tabs />
+					{tabName === 'All' ? (
+						<All />
+					) : tabName === 'Active' ? (
+						<Active />
+					) : (
+						<Completed />
+					)}
+				</div>
 			</div>
-		</div>
+		</>
 	);
 };
 

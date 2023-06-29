@@ -3,4 +3,5 @@ export * from './Input';
 export * from './Tabs';
 export * from './AddTodo';
 export * from './Toast';
-export * from './DisplayTodo';
+export * from './Modal';
+export * from './button';

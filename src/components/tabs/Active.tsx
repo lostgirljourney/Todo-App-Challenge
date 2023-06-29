@@ -1,5 +1,10 @@
-import { AddTodo } from '..';
+import { AddTodo, DisplayTodo } from '..';
 
 export const Active = () => {
-	return <AddTodo />;
+	return (
+		<>
+			<AddTodo />
+			<DisplayTodo />
+		</>
+	);
 };

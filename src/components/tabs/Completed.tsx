@@ -1,5 +1,9 @@
-import { Danger } from '..';
+import { DisplayTodo } from '..';
 
 export const Completed = () => {
-	return <Danger />;
+	return (
+		<>
+			<DisplayTodo />
+		</>
+	);
 };
