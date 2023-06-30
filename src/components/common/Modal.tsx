@@ -6,7 +6,7 @@ export const Modal: React.FC<{
 }> = ({ delBtnProps, cancelBtnProps }) => {
 	return (
 		<div
-			className="fixed hidden insert-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full top-0 left-0"
+			className="fixed hidden insert-0 bg-gray-600 bg-opacity-50 overflow-y-auto h-full w-full top-0 left-0 z-10"
 			id="modal"
 		>
 			<div className="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
@@ -27,8 +27,8 @@ export const Modal: React.FC<{
 						</p>
 					</div>
 					<div className="flex items-center justify-center gap-2 px-4 py-3">
-						<Secondary id="cancel" {...cancelBtnProps} />
-						<Danger id="del" {...delBtnProps} />
+						<Secondary props={cancelBtnProps} />
+						<Danger props={delBtnProps} />
 					</div>
 				</div>
 			</div>

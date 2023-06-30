@@ -1,4 +1,4 @@
-import { Active, All, Completed, Heading, Tabs } from './components';
+import { Active, All, Completed, Footer, Heading, Tabs } from './components';
 import { useAppSelector } from './store/hooks';
 
 const App = () => {
@@ -6,7 +6,7 @@ const App = () => {
 
 	return (
 		<>
-			<div className="max-w-full m-8">
+			<div className="max-w-full mx-8 mt-8 mb-12">
 				<Heading />
 				<div className="max-w-[608px] w-full flex flex-col mx-auto">
 					<Tabs />
@@ -19,6 +19,7 @@ const App = () => {
 					)}
 				</div>
 			</div>
+			<Footer />
 		</>
 	);
 };
