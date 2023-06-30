@@ -1,3 +1,5 @@
+import { Danger, Secondary } from '.';
+
 export const Modal: React.FC<{
 	delBtnProps?: any;
 	cancelBtnProps?: any;
@@ -25,20 +27,8 @@ export const Modal: React.FC<{
 						</p>
 					</div>
 					<div className="flex items-center justify-center gap-2 px-4 py-3">
-						<button
-							id="cancel"
-							className="font-montserrat px-4 py-2 bg-gray-500 text-white text-sm font-medium rounded-md w-fit shadow-sm hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-300"
-							{...cancelBtnProps}
-						>
-							cancel
-						</button>
-						<button
-							id="del"
-							className="font-montserrat px-4 py-2 bg-red-500 text-white text-sm font-medium rounded-md w-fit shadow-sm hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-300"
-							{...delBtnProps}
-						>
-							delete all
-						</button>
+						<Secondary id="cancel" {...cancelBtnProps} />
+						<Danger id="del" {...delBtnProps} />
 					</div>
 				</div>
 			</div>

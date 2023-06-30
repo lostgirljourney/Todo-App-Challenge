@@ -28,13 +28,13 @@ const Tab: React.FC<{
 export const Tabs = () => {
 	const tabName = useAppSelector((state) => state.tab.tab);
 	return (
-		<>
+		<div className="w-full">
 			<div className="flex justify-around">
 				{['All', 'Active', 'Completed'].map((tab) => (
 					<Tab tab={tab} active={tab === tabName} key={tab} />
 				))}
 			</div>
-			<div className="mb-[18px] w-[608px] h-0 border-b border-solid border-[#BDBDBD]" />
-		</>
+			<div className="mb-[18px] w-full h-0 border-b border-solid border-[#BDBDBD]" />
+		</div>
 	);
 };

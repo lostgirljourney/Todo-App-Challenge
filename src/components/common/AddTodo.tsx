@@ -16,7 +16,7 @@ export const AddTodo = () => {
 	};
 
 	return (
-		<div className="flex justify-between mb-8">
+		<div className="flex justify-between mb-8 flex-col gap-2 md:flex-row">
 			<Input
 				props={{
 					type: 'text',
