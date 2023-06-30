@@ -1,4 +1,4 @@
-<h1 align="center">Portfolio</h1>
+<h1 align="center">Todo App</h1>
 
 <div align="center">
    Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
@@ -34,7 +34,7 @@
 | :-----------------------------------: | :-----------------------------------: |
 | <img src="/public/assets/laptop.png"> | <img src="/public/assets/mobile.png"> |
 
-Challenge was to create a **Todo app** following the design given on the website.
+The challenge was to create a **Todo app** following the design given on the website.
 
 ### Built With
 
@@ -45,6 +45,11 @@ Challenge was to create a **Todo app** following the design given on the website
         React
       </a>
     </li>
+     <li>
+        <a href="https://redux-toolkit.js.org/">
+           Redux Toolkit
+        </a>
+     </li>
   </ul>
 </p>
 
