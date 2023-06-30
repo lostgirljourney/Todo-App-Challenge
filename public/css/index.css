@@ -905,6 +905,10 @@ video {
   font-family: Montserrat, sans-serif;
 }
 
+.font-raleway {
+  font-family: Raleway, sans-serif;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
